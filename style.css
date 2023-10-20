@@ -1,0 +1,191 @@
+.row{
+  
+}
+h1 {
+  font-family: 'Mitr', sans-serif;
+  font-size: 4rem;
+  line-height: 1.5;
+  font-weight: medium;
+  margin-top: 30px;
+}
+.title-image {
+  width: 60%;
+}
+.picbeer{
+  margin-right: 50px;
+}
+body {
+  background-color: #DBDBDB;
+}
+.header {
+  padding: 20px;
+  background-color: #ffcd00;
+}
+.nav-link:hover {
+  color: #CF7500;
+}
+/* สไตล์สำหรับคลาส color-change */
+.color-change.active {
+  background-color: #ffcd00 !important; /* เปลี่ยนสีเมื่อ hover */
+}
+
+/* สไตล์สำหรับคลาส loaded */
+.loaded {
+  animation: fadeIn 1.5s ease-in-out; /* เพิ่มการสั่นเพื่อเปลี่ยนสีเมื่อเว็บโหลดเสร็จ */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* สไตล์สำหรับคลาส brand-color-change */
+.brand-color-change.active {
+  color: #CF7500 !important; /* เปลี่ยนสีเมื่อ hover */
+  transition: color 0.3s;
+}
+
+/* จัดให้รูปภาพอยู่ตรงกลาง */
+#picbeer {
+  display: block;
+  margin: 0 auto;
+}
+/* สไตล์สำหรับคลาส center-brand */
+.center-brand {
+  text-align: center;
+}
+
+/* สไตล์สำหรับ Navbar Item และเปลี่ยนสีเมื่อ hover */
+.navbar-nav .nav-item .nav-link {
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #CF7500;
+}
+/* CSS เพื่อทำให้รูปภาพย่อหรือขยายตามขนาดแพลตฟอร์ม */
+img {
+  max-width: 100%; /* รูปภาพจะไม่เกินความกว้างของพิกเซลตัวแพลตฟอร์ม */
+  height: auto; /* รักษารูปสัดส่วนเมื่อย่อหรือขยาย */
+  
+}
+.box {
+  max-width: 400px;
+  max-height: 500px;
+  background-color: #fff;
+  box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ทำให้เนื้อหาอยู่ตรงกลางตามแนวนอน */
+  align-items: center; /* ทำให้เนื้อหาอยู่ตรงกลางตามแนวตั้ง */
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  position: relative;
+  border-radius: 10px;
+}
+.top-bar{
+  width: 50%;
+  height: 4px;
+  background: #F99417;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  align-items:center ;
+  width: 100%;
+}
+.fa-check-circle{
+  color: #363062;
+}
+
+/* creating heart */
+.heart{
+  color: rgba(155,155,155);
+}
+.heart::before{
+  content: '\f004';
+  font-family: fontawesome;
+  line-height: 30px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.box .heart-btn:checked ~ .heart::before{
+  color:#F99417
+}
+.heart-btn{
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  padding: 1rem;
+  display: none;
+}
+
+
+.content img{
+  width: 200px;
+  height: 200px;
+  border-radius:100px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: top;
+}
+.content{
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content strong{
+  
+  color: #141414;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.content p{
+  font-size: 1rem;
+  color: #7a7a7a;
+  margin: 4px 0px 10px 0px;
+  cursor: pointer;
+}
+.content p:hover{
+  text-decoration: underline;
+}
+
+.btn{
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.btn a i{
+  margin-right: 9px;
+  text-align: center;
+}
+.btn a{
+  text-align: center;
+  border-radius: 100px;
+  color: #8b8b8b;
+  padding: 8px 20px;
+  font-size: 1rem;
+}
+.btn a:hover{
+  color: #fff;
+  box-shadow: 2px 5px 15px rgba(80,123,252,0.05);
+  background-color: #507bfc;
+  transition: all ease 0.5s;
+}
